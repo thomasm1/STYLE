@@ -1,0 +1,30 @@
+// Main BLOG  Sass File
+
+
+@media (min-width: 100px) {
+    .app-navbar .navbar-collapse:after {
+    height: auto;
+    }
+    }
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,600');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+body {
+            font-family: 'Roboto', sans-serif;
+            background: blue url('../img/silverchip.png') ; 
+            max-width:950px;
+            margin-left:auto;
+            margin-right:auto; 
+            min-width: 100%;
+            *width: 100%;
+            overflow-x:none;   
+
+        } 
+ 
+  @import "calc";
+@import "toolkit"; 
+@import "bootstrap"; 
+@import "application"; 
+@import "mainblog"; 
