@@ -16,3 +16,6 @@ background: linear-gradient(direction, color-stop1, color-stop2, ...);
 #grad {
   background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }
+#grad {
+  background: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
