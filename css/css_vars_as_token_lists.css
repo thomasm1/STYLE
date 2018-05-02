@@ -1,0 +1,18 @@
+.block{
+  --p: 35;
+  width: calc(var(--p) * 1vw);
+  height: calc(var(--p) * 1vh);
+}
+
+.block2 {
+  --p: 30vw;
+  width: var(--p);
+  height: calc(1vh * var(--p) / 1vw);     
+  
+                          /* HEY! calc comes before css variables, before the computed time concept... 
+                          Everything had to make sense at parse-time ...
+                          so don't know length! and can't divide by length --> must use number!
+            SO, use variables for pure calculations... 
+      AGAIN:  good -> Number --> unit: calc(var(--foo) * 1px)   
+          Bad -> Unit --> number: badbadbadbadbadbadbadbadbad
+}

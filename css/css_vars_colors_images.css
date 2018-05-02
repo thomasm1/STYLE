@@ -1,0 +1,46 @@
+/* 
+div.block { 
+  background: radial-gradient(
+    transparent calc(100% - var(--corner, 10px)),
+    var(--color) 0);
+  --color: steelblue;
+  --corner: 20px;
+  color: var(--color);
+  } 
+  */
+  
+<!--
+<div class="block" style="--corner: 30px;">Dynamic CSS :-D </div>
+-->
+
+#################################################################################
+/*
+ * {
+    outline: var(--outline);
+    --outline: initial;
+   }
+ .block1 {
+    --outline: .2em solid;
+   }
+   */
+######################################################### !!! RELIABLE URL VARIBABLES!!!####################
+                        BAD::::
+                                  --img: "sad.jpg";
+                                  background: url("img/" var(--img));
+                        BAD::::
+                                  --img: "img/sad.jpg";
+                                  background: url(var(--img));
+GOOOOOOOOD::
+    --img: url("img/happy.jpg");
+    background: var(--img);
+ #############################################
+ div {
+  --size: 8em;
+  height: var(--size);
+  }
+ .declarative {
+     filter: invert();
+     --size: calc(var(--size) + 1em);
+ }
+ ################################################################   
+  

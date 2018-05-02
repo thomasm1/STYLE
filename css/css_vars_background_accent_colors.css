@@ -1,0 +1,34 @@
+--accent-color: 42deg;
+--accent-color: var(--accent-color);
+background: red;
+background: var(--accent-color, orange);
+
+/*example*/
+div.gradi {
+    background:radial-gradient(
+        transparent calc(100% - var(--corner, 10px)), /* 2nd arg is called fallback*/
+        var(--color) 0);
+    --color:teal;
+    --corner: 22px;
+    color: var(--color);
+    
+}
+* {
+    outline: var(--outline);
+    --outline: initial;
+}
+.gradi {
+    --outline: blue  1px solid; 
+         opacity:.7;
+         border-width:.5px; 
+    --background: steelblue;
+    
+} 
+.gradi div {
+    --outline:initial;
+}
+.gradi.win4 div {
+    --img: "images/header.png";
+    background: var(--img);
+    
+}

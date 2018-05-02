@@ -1,0 +1,10 @@
+@keyframes bg {
+    from { background-color: var(--c1); }
+    to { background-color: var(--c2); }
+ }
+ 
+#animation.slide {
+    animation: 1s bg infinite alternate;
+    --c1: yellow;
+    --c2: #0ca;
+    }
