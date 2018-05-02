@@ -1,0 +1,37 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "gulp general with ALL-concat, uglify, etc.",
+  "main": "gulpfile.js",
+  "bin": {
+    "gulp-template": "deps.min.js"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.1",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasm1/STYLE.git"
+  },
+  "keywords": [
+    "glup"
+  ],
+  "author": "thomas maestas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasm1/STYLE/issues"
+  },
+  "homepage": "https://github.com/thomasm1/STYLE#readme"
+}
