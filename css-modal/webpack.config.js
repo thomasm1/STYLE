@@ -4,7 +4,7 @@ module.exports = {
     plugins: './js/plugins.js'
   },
   output: {
-    path: './bin',
+    path: '/bin',
     filename: '[name].js'
   },
   module: {
