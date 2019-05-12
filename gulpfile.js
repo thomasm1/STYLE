@@ -28,7 +28,7 @@ gulp.task('depsjs', function ()
 
 gulp.task('depsDist', function ()
 {
-	return gulp.src(['src/deps.js'])
+	return gulp.src(['src/deps.js','src/d3-tip.js'])
 		.pipe(rename('deps.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
