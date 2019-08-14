@@ -1,0 +1,54 @@
+<style>
+.container {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+}
+
+.toaster {
+  width: 160px;
+  height: 110px;
+  background: #bbb;
+  border-radius: 10px 10px 0 0;
+}
+
+.toast {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  background: #ed9;
+  border-radius: 10px 10px 0 0;
+  transform: translate(-50%, -90px);
+  transition: transform .3s;
+}
+
+.depressed {
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<div class="container">
+    <div class="toaster"></div>
+    <div class="toast">Hello world!</div>
+  </div>
+
+  <script>
+  function depress() {
+  toast.classList.add('depressed');
+}
+
+function release() {
+  toast.classList.remove('depressed');
+}
+
+const toaster = document.querySelector('.toaster');
+const toast = document.querySelector('.toast');
+
+toaster.onmousedown = depress;
+document.onmouseup = release;
+  </script>
