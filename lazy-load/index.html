@@ -8,75 +8,166 @@
         body {
             background: aliceblue;
         }
-
+        
         img {
             transform: translateX(50%);
             opacity: 0;
             transition: all 500ms;
-            margin-left:auto;
-            margin-right:auto;
-          display:block;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
-
+        
         .fade {
             transform: translateX(0);
             opacity: 1.0;
             transition: all 500ms;
         }
+        
         div.spacer {
-            height:500px;
-            width:100%;
+            height: 500px;
+            width: 100%;
         }
-
     </style>
     <script defer src="lazy.js"></script>
-
+    <script>
+        let tt1 = performance.now();
+        console.log('not-ready! :' + tt1)
+        window.addEventListener('load', ((event) => {
+            let tt2 = performance.now();
+            console.log('ready! :' + tt2)
+            console.log(`timeload-time ${((tt2 - tt1) / 1000).toPrecision(12)} seconds.`);
+        }));
+    </script>
 </head>
 
 <body>
     <div>
-imgs
-<!-- 
+        imgs
+        <a href="/slow.html">SLOW</a>
+        <!-- 
         <img src="imgs/a.png"  /> -->
-        <img data-lazy="imgs/a.png"  />
-        <img data-lazy="imgs/b.png"  />
-        <img data-lazy="imgs/c.png"  />
-        <img data-lazy="imgs/d.png"  />
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/b.png" />
+        <img data-lazy="imgs/c.png" />
+        <img data-lazy="imgs/d.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/e.png"  />
+        <img data-lazy="imgs/e.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/f.png"  />
+        <img data-lazy="imgs/f.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/g.png"  />
+        <img data-lazy="imgs/g.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/h.png"  />
+        <img data-lazy="imgs/h.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/i.png"  />
+        <img data-lazy="imgs/i.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/j.png"  />
+        <img data-lazy="imgs/j.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/k.png"  />     
-        <img data-lazy="imgs/a.png"  />
-        <img data-lazy="imgs/i.png"  />
+        <img data-lazy="imgs/k.png" />
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/i.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/j.png"  />
+        <img data-lazy="imgs/j.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/k.png"  />
+        <img data-lazy="imgs/k.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/l.png"  />
+        <img data-lazy="imgs/l.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/m.png"  />
+        <img data-lazy="imgs/m.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/n.png"  />
+        <img data-lazy="imgs/n.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/o.png"  />
+        <img data-lazy="imgs/o.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/p.png"  />
-        <img data-lazy="imgs/q.png"  />
+        <img data-lazy="imgs/p.png" />
+        <img data-lazy="imgs/q.png" />
         <div class="spacer"></div>
-        <img data-lazy="imgs/r.png"  />
+        <img data-lazy="imgs/r.png" />
 
-    </div>
+
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/b.png" />
+        <img data-lazy="imgs/c.png" />
+        <img data-lazy="imgs/d.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/e.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/f.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/g.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/h.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/i.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/j.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/k.png" />
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/i.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/j.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/k.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/l.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/m.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/n.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/o.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/p.png" />
+        <img data-lazy="imgs/q.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/r.png" />
+
+
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/b.png" />
+        <img data-lazy="imgs/c.png" />
+        <img data-lazy="imgs/d.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/e.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/f.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/g.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/h.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/i.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/j.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/k.png" />
+        <img data-lazy="imgs/a.png" />
+        <img data-lazy="imgs/i.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/j.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/k.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/l.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/m.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/n.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/o.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/p.png" />
+        <img data-lazy="imgs/tree.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/MaestasReykjavikBanner20.png" />
+        <img data-lazy="imgs/tree.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/MaestasReykjavikBanner20.png" />
+        <img data-lazy="imgs/tree.png" />
+        <div class="spacer"></div>
+        <img data-lazy="imgs/MaestasReykjavikBanner20.png" />
 </body>
 
 </html>
