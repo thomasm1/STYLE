@@ -1,0 +1,66 @@
+<style>
+
+</style>
+
+<body class="scenery">
+    <section class="scenery__sky">
+      <div class="sky [sky--dusk / sky--daytime] [sky--foggy]">
+        <div class="sky__clouds"></div>
+        <div class="sky__sun"></div>
+      </div>
+    </section>
+    <section class="scenery__ground"></section>
+    <section class="scenery__people"></section>
+  </body>
+  <!-- 
+//Block 
+.scenery {
+   //  Elements
+  &__sky {
+    fill: screen;
+  }
+  &__ground {
+    float: bottom; 
+  }
+  &__people {
+    float: center;
+  }
+}
+//Block
+.sky {
+  background: dusk;
+ 
+  // Elements
+  
+  &__clouds {
+    type: distant;
+  }
+  
+  &__sun {
+    strength: .025;
+  }
+  
+  // Modifiers
+  &--dusk {
+    background: dusk;
+    .sky__clouds {
+      type: distant;
+    }
+    .sky__sun {
+      strength: .025;
+    }
+  }
+  
+  &--daytime {
+    background: daylight;
+    .sky__clouds {
+      type: fluffy;
+      float: center;
+    }
+    .sky__sun {
+      strength: .7;
+      align: center;
+      float: top;
+    }
+  }
+} -->
