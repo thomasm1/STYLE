@@ -1,0 +1,65 @@
+#wrapper {
+	background: #FFF;
+	margin: 25px auto 0px;
+	width: 900px;
+}
+#logo {
+	font-family: source-sans-pro;
+	font-size: 1.8em;
+	color: #000000;
+	width: 300px;
+	margin-bottom: 10px;
+	float: left;
+	font-style: normal;
+	font-weight: 900;
+}
+#nav {
+	font-family: source-sans-pro;
+	font-size: 1.1em;
+	color: #000;
+	text-align: right;
+	float: right;
+	width: 400px;
+	font-style: normal;
+	font-weight: 200;
+}
+#mainPic {
+	clear: both;
+	width: 900px;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #999;
+}
+#subBox1 {
+	float: left;
+	width: 438px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+#subBox2 {
+	float: right;
+	width: 438px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+#footer {
+	font-family: source-sans-pro;
+	font-size: 1em;
+	color: #000;
+	clear: both;
+	width: 900px;
+	margin-top: 24px;
+	padding-top: 10px;
+	border-top: 1px solid #999;
+	font-style: normal;
+	font-weight: 200;
+}
+#content {
+	width: 852px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .9em;
+}
